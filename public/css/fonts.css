@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "ir";
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "im";
+    src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "ib";
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: "sr";
+    src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "sm";
+    src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "sb";
+    src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "interb";
+    src: url("../fonts/FONTSPRINGDEMO-IntegralCFBoldRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFBoldRegular.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}

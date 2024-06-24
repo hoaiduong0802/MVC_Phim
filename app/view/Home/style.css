@@ -1,0 +1,357 @@
+main {
+  margin: unset;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+main section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+main section.before-pb-180 {
+  padding-bottom: 180px;
+}
+main section.negative-mt-180 {
+  margin-top: -180px;
+}
+
+.banner .hero-banner {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.banner .hero-banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .infomation {
+  max-width: 50%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 8px;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .infomation .category {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .infomation .title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .infomation .description {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .playmovie,
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .anotherInfo {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: white;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .playmovie a,
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .anotherInfo a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .playmovie a:hover,
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .anotherInfo a:hover {
+  color: black;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .playmovie:hover,
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .anotherInfo:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: black !important;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .playmovie:hover a,
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .anotherInfo:hover a {
+  color: black;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .playmovie {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .playmovie :first-child {
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .anotherInfo {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .anotherInfo :first-child {
+  border: 1px solid white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+}
+.banner .hero-banner .hero-banner__content .hero-banner__content-calltoaction .action .anotherInfo:hover :first-child {
+  border: 1px solid black !important;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.movie {
+  position: relative;
+  cursor: pointer;
+}
+.movie img {
+  position: absolute;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.movie .title {
+  position: absolute;
+}
+.movie:hover img.movieDes {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+.movie:hover .movie-preview {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  width: 100%;
+  height: 190%;
+  transition: width 0.3s, height 0.3s;
+}
+.movie .movie-preview {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-15%);
+  overflow: hidden;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.movie .movie-preview-description {
+  max-height: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.movie .movie-preview-description .description-img {
+  height: 100%;
+  position: relative;
+}
+.movie .movie-preview-description .description-img img {
+  position: absolute;
+}
+.movie .movie-preview-description .description-img img:hover {
+  transform: unset;
+}
+.movie .movie-preview-controller {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 8px;
+  padding: 16px;
+  background-color: black;
+}
+.movie .movie-preview-controller .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie .movie-preview-controller .heading .movie-preview-leftSide {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.movie .movie-preview-controller .heading .movie-preview-leftSide a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: unset !important;
+}
+.movie .movie-preview-controller .heading .movie-preview-leftSide > * {
+  color: white;
+}
+.movie .movie-preview-controller .heading .movie-preview-leftSide :nth-child(1) {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 10px 8px 10px 12px;
+}
+.movie .movie-preview-controller .heading .movie-preview-leftSide :nth-child(n+2) {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 10px 10px 10px 10px;
+}
+.movie .movie-preview-controller .heading .movie-preview-rightSide > * {
+  color: white;
+}
+.movie .movie-preview-controller .heading .movie-preview-rightSide :first-child {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 10px 10px 10px 10px;
+}
+.movie .movie-preview-controller .middle .episodeNumber span {
+  color: white;
+}
+.movie .movie-preview-controller .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie .movie-preview-controller .footer > div {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hot-genres {
+  cursor: pointer;
+}
+.hot-genres .swiper_category {
+  overflow: hidden;
+}
+.hot-genres .genre {
+  text-align: center;
+  background-color: #ccc;
+  border-radius: 10px;
+  border: 1px #999 solid;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+.hot-genres .genre a {
+  text-decoration: none;
+  color: #1A2130;
+}
+.hot-genres .genre p {
+  margin: unset;
+  padding: 10px;
+}
+.hot-genres .genre:hover {
+  background-color: #000;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.hot-genres .genre:hover a {
+  color: #999;
+}
+.hot-genres .genre img {
+  width: 50px;
+  height: 50px;
+}
+
+.favorite-movies .movie {
+  border-radius: 20px;
+  height: 250px;
+}
+.favorite-movies .movie img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.favorite-movies .swiper_2 {
+  overflow: hidden;
+}
+.favorite-movies.before-pb-180 {
+  padding-top: 50px;
+  margin-top: -40px;
+  overflow: hidden;
+}
+.favorite-movies.before-pb-180 > div {
+  overflow: visible;
+}
+.favorite-movies.before-pb-180 .movie-preview {
+  transform: translate(0%, -15%);
+}
+.favorite-movies.before-pb-180 .movie-preview.left {
+  left: 0;
+}
+.favorite-movies.before-pb-180 .movie-preview.right {
+  right: 0;
+}
+
+.moviePass__contains {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.moviePass__contains > div {
+  overflow: hidden;
+  transition: 0.3s;
+}
+.moviePass__contains > div a {
+  display: block;
+  transition: 0.3s;
+}
+.moviePass__contains > div a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.moviePass__contains > div:hover {
+  box-shadow: 0px 0px 10px 1px;
+  transition: 0.3s;
+}
+.moviePass__contains > div:hover a {
+  transform: scale(1.1);
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,86 @@
+.detailMovie {
+    padding-top: 90px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &-mainwrapper {
+            max-width: 70%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            .movie {
+                display: flex;
+                column-gap: 20px;
+                height: 480px;
+
+                img {
+                    position: unset;
+                    aspect-ratio: 9/16;
+                    height: 100%;
+                    width: 350px;
+                }
+
+                &-info {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h3 {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: #dacb46;
+                    }
+
+                    &-rating {
+                        display: flex;
+                        flex-direction: column;
+
+                        .star-component {
+                            width: max-content;
+                        }
+                    }
+                }
+            }
+
+            .cast {
+                overflow: hidden;
+
+                .swiper_cast {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: 200px !important;
+                            height: 200px;
+                            border-radius: 100%;
+                            overflow: hidden;
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &-hotmovie {
+            max-width: 30%;
+            width: 100%;
+        }
+    }
+
+    &__related {
+        height: 250px;
+
+        .movie-grid {
+            height: 100%;
+        }
+    }
+}

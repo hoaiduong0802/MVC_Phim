@@ -1,0 +1,56 @@
+/* IMPORT CSS TO GLOBAL STATE CSS */
+
+@import "../../app/view/Blog/style.css";
+@import "../../app/view/Coming/style.css";
+@import "../../app/view/Detail/style.css";
+@import "../../app/view/Footer/style.css";
+@import "../../app/view/Genre/style.css";
+@import "../../app/view/Header/style.css";
+@import "../../app/view/Home/style.css";
+@import "../../app/view/SignIn/style.css";
+@import "../../app/view/SignOut/style.css";
+@import "../../app/view/TvShow/tvshow.php";
+@import "../../app/view/404/style.css";
+@import "../../app/view/CategoryMovie/style.css";
+@import "../../app/view/Category/style.css";
+@import "../../app/view/PlayMovie/style.css";
+@import "../../app/view/Cart/style.css";
+@import "../../app/view/Checkout/style.css";
+/* END IMPORT */
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    /* width: 1180px; */
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+}
+

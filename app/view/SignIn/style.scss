@@ -1,0 +1,20 @@
+.sec_login{
+    padding-top: 90px !important;
+}
+
+form {
+    .user-name {
+        span {
+            display: inline-block;
+            width: 130px;
+        }
+    }
+
+    .pass-word {
+        span {
+            padding-top: 12px;
+            display: inline-block;
+            width: 130px;
+        }
+    }
+}

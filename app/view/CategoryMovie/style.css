@@ -1,0 +1,18 @@
+.favorite-movies.cinemaMovie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.movie p img {
+  width: 200px;
+  position: unset;
+}
+.movie.pd-top-90 {
+  padding-top: 90px;
+}
+
+.main-categorymovie {
+  padding-top: 90px;
+}/*# sourceMappingURL=style.css.map */
